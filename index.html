@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.png">
+  <title>OptimaAI (Labs)</title>
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/sidebar.css">
+  <link rel="stylesheet" href="/style/splash.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.1/iframeResizer.contentWindow.min.js"
+			async
+		></script>
+		<script type="module" crossorigin src="https://black-forest-labs-flux-1-dev.hf.space/assets/index-BYvoOQkn.js"></script>
+		<link rel="stylesheet" crossorigin href="https://black-forest-labs-flux-1-dev.hf.space/assets/index-BG5BHdVr.css">
+</head>
+<body>
+  <div id="sidebar" class="sidebar">
+    <button id="closeSidebar" class="close-btn">&times;</button>
+    <div class="sidebar-content">
+      <a class="selected" href="#" id="link1">
+        <img src="/image/home.png" alt="/image/home.png">
+        <h1>Trang chủ</h1>
+        <p class="ml-3 bg-gray-400 rounded-full p-1 text-xs text-black">Được chọn</p>
+        </a>
+      <a href="#" id="link2">
+        <img src="/image/home.png" alt="/image/home.png">
+        <h1>Công cụ</h1></a>
+      <div id="subMenu" class="sub-menu">
+        <a href="#">Sub Link 1</a>
+        <a href="#">Sub Link 2</a>
+        <a href="#">Sub Link 3</a>
+      </div>
+      <a href="#" id="link3">
+        <img src="/image/home.png" alt="/image/home.png">
+        <h1>Thông báo</h1></a>
+    </div>
+    <div class="bg-gray-200 rounded-2xl m-7 p-4">
+    <div class="flex items-center p-3 bg-gray-50 rounded-xl">
+      <img class="w-10 h-auto" src="/image/favicon.png" alt="/image/favicon.png">
+      <h1 class="ml-2 font-bold text-xl">Danh Trình</h1>
+    </div>
+    <div>
+      <p class="ml-2">Date</p>
+      <p class="ml-2">Music</p>
+    </div>
+    </div>
+  </div>
+  <nav class="nav">
+    <button id="openSidebar">☰</button>
+    <img src="/image/favicon.png" alt="/image/favicon.png">
+    <h1 translate="off">FlashCortex</h1>
+  </nav>
+  <div id="splashScreen" class="fixed inset-0 flex flex-col items-center justify-center bg-gray-700 z-index transition-opacity duration-1000 ease-out">
+  <!-- Logo -->
+  <div class="mb-4">
+    <img src="/image/favicon.png" alt="Logo" class="h-24 w-24 m-7">
+  </div>
+
+  <!-- iOS style loading spinner -->
+  <div class="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full border-t-transparent border-white m-7 mb-4"></div>
+
+  <!-- Progress Bar -->
+  <div class="w-full max-w-xs m-7">
+    <div class="relative pt-1">
+      <div class="flex mb-2src="" items-center justify-between">
+        <div>
+          
+        </div>
+        <div class="text-right">
+          <span id="progressText" class="text-xs font-semibold inline-block text-white">0%</span>
+        </div>
+      </div>
+      <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-white">
+        <div id="progressBar" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-600 transition-all duration-1000 ease-in-out" style="width: 0%"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="border border-gray-400 bg-transparent rounded-2xl m-5 mt-20 pl-7 pr-7 pt-3 pb-3">
+    <div class="flex justify-center mb-3">
+      <img class="w-10 h-auto" src="/image/favicon.png" alt="">
+      <h1 class="text-xl font-black ml-3">FlashCortex AI</h1>
+    </div>
+    <p class="text-center">Mô hình FCAI mạnh mẽ</p>
+  </div>
+  <div class="mt-15"></div>
+
+	  <div
+	  style="
+	  display: flex;
+	  justify-items: center;
+	  align-items: center;
+	  padding: 5px;
+	  position: fixed;
+	  bottom: 0;
+	  z-index: 9999999;
+	  height: 30px;
+	  background-color: #fff;
+	  text-align: center;
+	  width: 100%;
+	  -webkit-box-shadow: 5px -7px 12px 18px #FFF;
+box-shadow: 5px -7px 12px 18px #Fff;
+	  ">
+	    <h1 class="mr-4 ml-2">Bảo vệ bởi</h1>
+	    <img class="bg-poster p-1 w-[55px] h-auto rounded-full" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png" alt="Google">
+	    	    <img class="bg-poster p-1 w-[55px] h-auto rounded-full ml-2" src="https://seeklogo.com/images/C/cloudflare-logo-5316BE5408-seeklogo.com.png" alt="Google">
+	  </div>
+		
+</body>
+<script src="/JavaScript/sidebar.js"></script>
+<script src="/JavaScript/splash.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</html>
