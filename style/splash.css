@@ -1,0 +1,17 @@
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner-border {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: white;
+}
+
+.fade-out {
+  opacity: 0;
+}
+

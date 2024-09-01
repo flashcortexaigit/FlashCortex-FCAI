@@ -1,0 +1,62 @@
+@font-face {
+  font-family: Apple;
+  src: url(/font/SFCompactDisplay-Bold.otf);
+}
+body {
+  font-family: Apple;
+  	background-color: #fff;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 5%;
+  width: 100%;
+  
+
+}
+
+.nav {
+  background-color: #2C2C2CB3;
+  backdrop-filter: blur(20px);
+  position: fixed;
+  display: flex;
+  top: 0;
+  z-index: 99999999;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.nav img {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+.nav h1 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+.page-wel {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 135px
+}
+.page-wel img {
+  margin-bottom: 20px;
+  height: 100px;
+  width: 100px;
+}
+.page-wel h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+.z-index {
+  z-index: 10000000000000000000000000;
+}
+.bg-poster {
+  background-color: #BBBBBB;
+}
